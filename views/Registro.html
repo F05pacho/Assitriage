@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>AssisTriage USB</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+	<div id ="Menu"></div>
+    <div class="modal fade" id="Login" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h3 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Iniciar Sesión</h3>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              
+            </div>
+            <div class="modal-body">
+              <div role="form">
+                <div class="form-group">
+                  <label for="usrname_or_email"><span class="glyphicon glyphicon-user"></span>Nombre</label>
+                  <input type="text" class="form-control" id="user_login2" placeholder="Introducir Nombre">
+                </div>
+                <div class="form-group">
+                  <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Cedula</label>
+                  <input type="text" class="form-control" id="pass_login2" placeholder="Introducir Cedula">
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="1" id="session_login2" checked>Recordarme</label>
+                </div>
+                <button type="button" class="btn btn-default btn-success btn-block" id="Enviar2"><span
+								class="glyphicon glyphicon-off"><a href="Usuario.html"></a></span> Iniciar Sesión</button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+              
+              <p>¿No estás registrado? <a data-toggle="modal" data-target="#Registro">Registrate!</a></p>
+              <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Registrarse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          
+          <section class="ftco-footer ftco-section img" style="background-image: url('images/dept-1.jpg'); ">
+            
+            <div class="overlay"></div>
+  
+          <div class="container">    
+          <h2>Registrarse</h2>
+          <h4>Cree una cuenta nueva.</h4>
+          <hr />
+          
+          <div class="row">
+              <label class="col-md-2 control-label" style="color: black;">Nombre</label>
+              <div class="col-md-10">
+                <input  type="text" class="form-control" id="nombre_registro" placeholder="Introducir Nombre">
+              </div>
+          </div>
+
+            <div class="row">
+              <div class="col-xs12 col-sm-12 col-md-2">
+                <label  style="color: black;">Primer Apellido</label></div>
+              <div class="col-xs12 col-sm-12 col-md-4">
+                <input  type="text" class="form-control" id="Apellido_1" placeholder="Primer Apellido">
+              </div>
+              <div class="col-xs12 col-sm-12 col-md-2">
+               <label  style="color: black;">Segundo Apellido</label></div> 
+              <div class="col-xs12 col-sm-12 col-md-4">
+                <input  type="text" class="form-control" id="Apellido_2" placeholder="Segundo Apellido">
+              </div>
+              <div class="col-xs12 col-sm-12 col-md-2">
+                <label  style="color: black;">Fecha de nacimiento</label></div> 
+               <div class="col-xs12 col-sm-12 col-md-4">
+                 <input  type="date" class="form-control" id="fecha_nacimiento" placeholder="">
+               </div>
+              <div class="col-xs12 col-sm-12 col-md-2">
+                  <label class="col-md-2 control-label" style="color: black;">Telefono</label></div>
+                <div class="col-xs12 col-sm-12 col-md-4">
+                  <input  type="text" class="form-control" id="telefono" placeholder="Introducir Telefono">
+                </div>
+            </div>
+          <div class="row">
+             <div class="col-xs12 col-sm-12 col-md-2">
+                <label  style="color: black;">Documento de identidad</label></div>
+              <div class="col-xs12 col-sm-12 col-md-6" ><input type="checkbox" id="cbox" value="second_checkbox"> CC
+              <input type="checkbox" id="cbox" value="second_checkbox"> 
+                <input  type="text" class="form-control" id="documento" placeholder="Introducir Documento de identidad"> </div>
+          </div>
+                <div class="row">
+              <div class="col-xs12 col-sm-12 col-md-2">
+                <label  style="color: black;">Estado Civil</label></div>
+                <div class="col-md-10"><input type="checkbox" id="cbox2" value="second_checkbox"> <label  style="color: black;" for="cbox">Casado/a</label>
+                  <input type="checkbox" id="cbox2" value="second_checkbox"> <label  style="color: black;" for="cbox">soltero/a</label>
+                  <input type="checkbox" id="cbox2" value="second_checkbox"> <label  style="color: black;" for="cbox">viudo/a</label> </div>
+                  <div class="col-xs12 col-sm-12 col-md-2">
+                    <label  style="color: black;">sexo</label></div> 
+                    <div class="col-md-10"><input type="checkbox" id="cbox3" value="second_checkbox"> <label  style="color: black;" for="cbox">M</label>
+                      <input type="checkbox" id="cbox3" value="second_checkbox"> <label  style="color: black;" for="cbox">F</label>
+                      <input type="checkbox" id="cbox3" value="second_checkbox"> <label  style="color: black;" for="cbox">Otro</label> </div>
+                </div>
+          <div class="row">
+            <div class="col-xs12 col-sm-12 col-md-2">
+              <label style="color: black;">EPS</label></div>
+              <div class="col-xs12 col-sm-12 col-md-4"> <input  type="text" class="form-control" id="eps_registro" placeholder="Introducir Eps"></div>
+              <div class="col-xs12 col-sm-12 col-md-2">
+                <label style="color: black;">Ocupacion</label></div>
+                <div class="col-xs12 col-sm-12 col-md-4"> <input  type="text" class="form-control" id="ocupacion_registro" placeholder="Introducir Ocupacion"></div>
+          </div>
+              <div class="row">
+                <div class="col-xs12 col-sm-12 col-md-2">
+                  <label style="color: black;">Dirección</label>
+                </div>
+                <div class="col-xs12 col-sm-12 col-md-4">
+                  <input  type="text" class="form-control" id="direccion_registro" placeholder="Introducir Dirección">
+                </div>
+                <div class="col-xs12 col-sm-12 col-md-2">
+                  <label  style="color: black;">Zona rural</label>
+                </div>
+                <div class="col-xs12 col-sm-12 col-md-4">
+                  <input  type="text" class="form-control" id="zonarural" placeholder="urbana o Rural">
+                </div>
+                <div class="col-xs12 col-sm-12 col-md-2">
+                  <label  style="color: black;">Alergias</label>
+                </div>
+                <div class="col-xs12 col-sm-12 col-md-4">
+                  <input  type="text" class="form-control" id="alergias" placeholder="Introducir Alergias">
+                </div>
+                <div class="col-xs12 col-sm-12 col-md-2">
+                  <label  style="color: black;">Nombre del Acompañante</label>
+                </div>
+                <div class="col-xs12 col-sm-12 col-md-4">
+                  <input  type="text" class="form-control" id="nombre_acompañante" placeholder="Introducir Acompañante">
+                </div>
+                <div class="col-xs12 col-sm-12 col-md-2">
+                  <label  style="color: black;">Parentesco</label>
+                </div>
+                <div class="col-xs12 col-sm-12 col-md-4">
+                  <input  type="text" class="form-control" id="parentesco_registro" placeholder="Introducir parentesco">
+                </div>
+                <div class="col-xs12 col-sm-12 col-md-2">
+                  <label  style="color: black;">Telefono del Acompañante</label>
+                </div>
+                <div class="col-xs12 col-sm-12 col-md-4">
+                  <input  type="text" class="form-control" id="telefono_acompañante" placeholder="Introducir Telefono">
+                </div>
+                <div class="col-xs12 col-sm-12 col-md-2">
+                  <label  style="color: black;">Contraseña</label>
+                </div>
+                <div class="col-xs12 col-sm-12 col-md-4">
+                  <input  type="password" class="form-control" id="pass_registro" placeholder="Introducir contraseña">
+                </div>
+              </div>
+          <div class="form-group">
+              <div class="col-md-offset-2 col-md-10">
+                <button id="Registro_guardar" href="Usuario.html" class="btn btn-primary py-3 px-4"> Registrar</button>
+              </div>
+          </div>
+        </div>
+
+        </section>
+    <div id="Footer"></div>
+    
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="js/Master.js"></script>
+<script src="/__/firebase/7.14.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.14.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+  <script src="js/main.js"></script>
+<script src="../core/Controllers/Registro.js"0 ></script>
+
+
+
+  </body>
+</html>

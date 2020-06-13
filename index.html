@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>AssisTriage USB</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="views/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="views/css/animate.css">
+    
+    <link rel="stylesheet" href="views/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="views/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="views/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="views/css/aos.css">
+
+    <link rel="stylesheet" href="views/css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="views/css/flaticon.css">
+    <link rel="stylesheet" href="views/css/icomoon.css">
+	<link rel="stylesheet" href="views/css/style.css">
+	
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<div id ="Menu"></div>
+	<div class="modal fade" id="Login" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Iniciar Sesión</h3>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div role="form">
+						<div class="form-group">
+							<label for="usrname_or_email"><span class="glyphicon glyphicon-user"></span>Nombre</label>
+							<input type="text" class="form-control" id="user_login" placeholder="Introducir Nombre">
+						</div>
+						<div class="form-group">
+							<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Cedula</label>
+							<input type="text" class="form-control" id="pass_login" placeholder="Introducir Cedula">
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="1" id="session_login" checked>Recordarme</label>
+						</div>
+						<button type="button" class="btn btn-default btn-success btn-block" id="Enviar"><span
+								class="glyphicon glyphicon-off"><a href="Usuario.html"></a></span> Iniciar Sesión</button>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span
+							class="glyphicon glyphicon-remove"></span> Cancelar</button>
+
+					<p>¿No estás registrado? <a data-toggle="modal" data-target="#Registro">Registrate!</a></p>
+					<a href="views/Registro.html" class="nav-link">Registrarse</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	  
+	  <section class="hero-wrap js-fullheight" style="background-image: url('views/images/bg_3.jpg');" data-section="home" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-6 pt-5 ftco-animate">
+          	<div class="mt-5">
+          		<span class="subheading">Bienvenido a AssisTriage</span>
+	            <h1 class="mb-4">Estamos aquí <br>Para su atención.</h1>
+	            <p class="mb-4">A continuación podrá realizar su registro y posteriormente podrá realizar una prevalorización para agilizar el tiempo de su atención.</p>
+				<div id="app"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<div id="Footer"></div>
+
+    
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <script src="views/js/jquery.min.js"></script>
+  <script src="views/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="views/js/popper.min.js"></script>
+  <script src="views/js/bootstrap.min.js"></script>
+  <script src="views/js/jquery.easing.1.3.js"></script>
+  <script src="views/js/jquery.waypoints.min.js"></script>
+  <script src="views/js/jquery.stellar.min.js"></script>
+  <script src="views/js/owl.carousel.min.js"></script>
+  <script src="views/js/jquery.magnific-popup.min.js"></script>
+  <script src="views/js/aos.js"></script>
+  <script src="views/js/jquery.animateNumber.min.js"></script>
+  <script src="views/js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="views/js/google-map.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="views/js/Master.js"></script>
+<script src="/__/firebase/7.14.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.14.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+  <script src="views/js/main.js"></script>
+	<script src="core/Controllers/conexion.js" ></script>
+  	
+	<div class="blog-test" id="geolocation-test">
+		<p>El script aún no se ha ejecutado.</p>
+	</div>
+	<script type="text/javascript">
+		/*<![CDATA[*/
+		(function(){
+	var content = document.getElementById("geolocation-test");
+
+	if (navigator.geolocation)
+	{
+		navigator.geolocation.getCurrentPosition(function(objPosition)
+		{
+			var lon = objPosition.coords.longitude;
+			var lat = objPosition.coords.latitude;
+
+			var dir = "";
+			var latlng = new google.maps.LatLng(lat, lon);
+			geocoder = new google.maps.Geocoder();
+			geocoder.geocode({"latLng": latlng}, function(results, status)
+			{
+				if (status == google.maps.GeocoderStatus.OK)
+				{
+					if (results[0])
+					{
+						dir = "<p><strong>Dirección: </strong>" + results[0].formatted_address + "</p>";
+					}
+					else
+					{
+						dir = "<p>No se ha podido obtener ninguna dirección en esas coordenadas.</p>";
+					}
+				}
+				else
+				{
+					dir = "<p>El Servicio de Codificación Geográfica ha fallado con el siguiente error: " + status + ".</p>";
+				}
+
+				content.innerHTML = "<p><strong>Latitud:</strong> " + lat + "</p><p><strong>Longitud:</strong> " + lon + "</p>" + dir;
+			});
+		}, function(objPositionError)
+		{
+			switch (objPositionError.code)
+			{
+				case objPositionError.PERMISSION_DENIED:
+					content.innerHTML = "No se ha permitido el acceso a la posición del usuario.";
+				break;
+				case objPositionError.POSITION_UNAVAILABLE:
+					content.innerHTML = "No se ha podido acceder a la información de su posición.";
+				break;
+				case objPositionError.TIMEOUT:
+					content.innerHTML = "El servicio ha tardado demasiado tiempo en responder.";
+				break;
+				default:
+					content.innerHTML = "Error desconocido.";
+			}
+		}, {
+			maximumAge: 75000,
+			timeout: 15000
+		});
+	}
+	else
+	{
+		content.innerHTML = "Su navegador no soporta la API de geolocalización.";
+	}
+})();
+/*]]>*/
+	</script>
+  </body>
+</html>
