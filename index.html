@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="views/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="views/css/magnific-popup.css">
 
-    <link rel="stylesheet" href="views/css/aos.css">
-
+	<link rel="stylesheet" href="views/css/aos.css">
+	
     <link rel="stylesheet" href="views/css/ionicons.min.css">
     
     <link rel="stylesheet" href="views/css/flaticon.css">
@@ -24,29 +24,21 @@
 	
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-<div id ="Menu"></div>
+	<div id ="Menu"></div>
 	<div class="modal fade" id="Login" role="dialog">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="modal-header">
+				<div class="modal-header"> 
 					<h3 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Iniciar Sesión</h3>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 				<div class="modal-body">
 					<div role="form">
 						<div class="form-group">
-							<label for="usrname_or_email"><span class="glyphicon glyphicon-user"></span>Nombre</label>
-							<input type="text" class="form-control" id="user_login" placeholder="Introducir Nombre">
-						</div>
-						<div class="form-group">
 							<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Cedula</label>
 							<input type="text" class="form-control" id="pass_login" placeholder="Introducir Cedula">
 						</div>
-						<div class="checkbox">
-							<label><input type="checkbox" value="1" id="session_login" checked>Recordarme</label>
-						</div>
-						<button type="button" class="btn btn-default btn-success btn-block" id="Enviar"><span
-								class="glyphicon glyphicon-off"><a href="Usuario.html"></a></span> Iniciar Sesión</button>
+						<button type="button" class="btn btn-default btn-success btn-block" id="Enviar" onclick="session()" > Iniciar Sesión</button>
 					</div>
 				</div>
 				<div class="modal-footer">
@@ -54,14 +46,14 @@
 							class="glyphicon glyphicon-remove"></span> Cancelar</button>
 
 					<p>¿No estás registrado? <a data-toggle="modal" data-target="#Registro">Registrate!</a></p>
-					<a href="views/Registro.html" class="nav-link">Registrarse</a></span>
+					<a href="http://localhost/Assitriage/views/Registro.html" class="nav-link">Registrarse</a></span>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	  
-	  <section class="hero-wrap js-fullheight" style="background-image: url('views/images/bg_3.jpg');" data-section="home" data-stellar-background-ratio="0.5">
+	  <section class="hero-wrap js-fullheight" style="background-image: url('views/images/teclado.jpg');" data-section="home" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
@@ -75,14 +67,13 @@
           </div>
         </div>
       </div>
+    
     </section>
 
 <div id="Footer"></div>
-
-    
+  
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
   <script src="views/js/jquery.min.js"></script>
   <script src="views/js/jquery-migrate-3.0.1.min.js"></script>
   <script src="views/js/popper.min.js"></script>
@@ -116,72 +107,12 @@
 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
   <script src="views/js/main.js"></script>
 	<script src="core/Controllers/conexion.js" ></script>
+	<script src="core/Controllers/login.js"></script>
+	<script src ="core/Controllers/Gps.js"></script>
   	
 	<div class="blog-test" id="geolocation-test">
-		<p>El script aún no se ha ejecutado.</p>
+		<p></p>
 	</div>
-	<script type="text/javascript">
-		/*<![CDATA[*/
-		(function(){
-	var content = document.getElementById("geolocation-test");
-
-	if (navigator.geolocation)
-	{
-		navigator.geolocation.getCurrentPosition(function(objPosition)
-		{
-			var lon = objPosition.coords.longitude;
-			var lat = objPosition.coords.latitude;
-
-			var dir = "";
-			var latlng = new google.maps.LatLng(lat, lon);
-			geocoder = new google.maps.Geocoder();
-			geocoder.geocode({"latLng": latlng}, function(results, status)
-			{
-				if (status == google.maps.GeocoderStatus.OK)
-				{
-					if (results[0])
-					{
-						dir = "<p><strong>Dirección: </strong>" + results[0].formatted_address + "</p>";
-					}
-					else
-					{
-						dir = "<p>No se ha podido obtener ninguna dirección en esas coordenadas.</p>";
-					}
-				}
-				else
-				{
-					dir = "<p>El Servicio de Codificación Geográfica ha fallado con el siguiente error: " + status + ".</p>";
-				}
-
-				content.innerHTML = "<p><strong>Latitud:</strong> " + lat + "</p><p><strong>Longitud:</strong> " + lon + "</p>" + dir;
-			});
-		}, function(objPositionError)
-		{
-			switch (objPositionError.code)
-			{
-				case objPositionError.PERMISSION_DENIED:
-					content.innerHTML = "No se ha permitido el acceso a la posición del usuario.";
-				break;
-				case objPositionError.POSITION_UNAVAILABLE:
-					content.innerHTML = "No se ha podido acceder a la información de su posición.";
-				break;
-				case objPositionError.TIMEOUT:
-					content.innerHTML = "El servicio ha tardado demasiado tiempo en responder.";
-				break;
-				default:
-					content.innerHTML = "Error desconocido.";
-			}
-		}, {
-			maximumAge: 75000,
-			timeout: 15000
-		});
-	}
-	else
-	{
-		content.innerHTML = "Su navegador no soporta la API de geolocalización.";
-	}
-})();
-/*]]>*/
-	</script>
+	
   </body>
 </html>

@@ -34,15 +34,14 @@ $('#Enviar2').click(function() {
           Fecha_nacimiento:$('#fecha_nacimiento').val(),
           Telefono:$('#telefono').val(),
           Documento_identidad:$('#documento').val(),
-          eps:$('#eps_registro').val(),
+          eps:$('#tabla').val(),
           ocupacion:$('#ocupacion_registro').val(),
           direccion:$('#direccion_registro').val(),
           zona_rural:$('#zonarural').val(),
           alegias:$('#alergias').val(),
           Acompañante:$('#nombre_acompañante').val(),
           parentesco:$('#parentesco_registro').val(),
-          tel_acompañante:$('#telefono_acompañante').val(),
-          contraseña:$('#pass_registro').val()
+          tel_acompañante:$('#telefono_acompañante').val()
     
         })
         });

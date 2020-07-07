@@ -50,20 +50,22 @@
                     <span  id="N"></span>
                     <br>
                     <label style="color: black;"for="usrname_or_email"><span class="glyphicon glyphicon-user"></span>Paciente</label>
+                    <table>
+                      <thead>
+                             <tr>
+                                 <th  style="color:black">email</th>
+                                 <th  style="color:black">tipo</th>                                    
+                              </tr>
+                      </thead>
+                      <tbody id="tabla">                                
+                      </tbody>
+                  </table>
+                 
                     <br>
                     <label style="color: black;"for="usrname_or_email"><span class="glyphicon glyphicon-user"></span>Edad</label>
                     <br>
                     <label style="color: black;"for="usrname_or_email"><span class="glyphicon glyphicon-user"></span>Sexo</label>
                 </div>
-                <script>
-                  var database = firebase.database();
-                  var ref = firebase.database().ref('Usuarios');
-                  ref.on("value",function(snapshot){
-                    var data = snapshot.val();
-                    document.getElementById("N").textContent = snapshot.val().nombre
-                
-                  });
-                </script>
           </div>
           <div class="row">
                 <div class="col-xs12 col-sm-12 col-md-2">
@@ -170,8 +172,22 @@
   <script src="js/scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
+  <script src="/__/firebase/7.14.3/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/7.14.3/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
   
-  <script src="js/main.js"></script>
-    
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="js/main.js"></script>
+  <script src="../core/Controllers/ver_datos.js" ></script>
   </body>
 </html>

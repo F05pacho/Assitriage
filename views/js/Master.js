@@ -2,25 +2,29 @@ $(document).ready(function () {
 AgregarMenu();
 AgregarFooter();
 });
+$(document).ready(function () {
+	
+	AgregarFooter();
+	});
 
+//Funcion para llamar el menu de ingresos al sistema//
 function AgregarMenu() {
     var menu = document.getElementById("Menu");
     menu.innerHTML = '<header>'+
     '<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">'+
 	    '<div class="container">'+
-	     '<a class="navbar-brand" href="index.html">AssisTriage</a>'+
+	      '<a class="navbar-brand" href="../Assitriage">AssisTriage</a>'+
 	      '<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">'+
 	        '<span class="oi oi-menu"></span> Menú </button>'+
 	      '<div class="collapse navbar-collapse" id="ftco-nav">'+
 	       '<ul class="navbar-nav nav ml-auto">'+
 	        '<li class="nav-item cta mr-md-2"><a class="nav-link" data-toggle="modal" data-target="#Login">Iniciar Sesión</a></li>'+
-            '<li class="nav-item cta mr-md-2"><a href="Registro.html" class="nav-link">Registro</a></li>'+
+            '<li class="nav-item cta mr-md-2"><a href="../Assitriage/views/Registro.html" class="nav-link">Registro</a></li>'+
 	        '</ul>'+
         '</div>'+
-        '<a class="navbar-brand" style="display: none" >Usuario</a>'+
-        '<img src="views/images/perfil.png" width="60" height="60"></div>'+
 	  '</nav></header>';
 }
+//Funcion para llamar el píe pagina//
 function AgregarFooter() {
 	var footer = document.getElementById("Footer");
 	footer.innerHTML = '<footer class="ftco-footer ftco-section img" style="background-image: url(images/footer-bg.jpg);">'+

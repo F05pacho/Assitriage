@@ -1,0 +1,4 @@
+
+const usuarioSchema = new schema({
+    
+})
